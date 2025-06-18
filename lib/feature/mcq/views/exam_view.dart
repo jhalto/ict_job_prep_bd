@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ict_job_prep_bd/feature/mcq/controller/mcq_controller.dart';
 import 'package:ict_job_prep_bd/feature/mcq/model/exam_model.dart';
+import 'package:ict_job_prep_bd/feature/mcq/views/mcq_view.dart';
 
 class ExamView extends StatelessWidget {
   ExamView({super.key});
@@ -18,6 +19,11 @@ class ExamView extends StatelessWidget {
         itemBuilder: (context, index) {
           var exams = controller.exams[index];
         return ListTile(
+          onTap: (){
+            Get.to(McqView(
+              mcqs: exams.questions,
+            ));
+          },
           title: Text("${exams.title}(${exams.dept})"),
           subtitle: Text("Exam:${exams.date}(${exams.pattern})"),   
         );

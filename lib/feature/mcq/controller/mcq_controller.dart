@@ -6,7 +6,7 @@ class McqController extends GetxController {
   List<ExamModel> exams = [
     ExamModel(
       examId: 1,
-      title: "Combined Bank Senior Officer (IT)",
+      title: "Combined Bank Senior Officer",
       date: "17.05.2024",
       pattern: 'BIBM',
       dept: "IT",
