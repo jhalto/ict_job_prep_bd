@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:ict_job_prep_bd/feature/home/views/home.dart';
+import 'package:ict_job_prep_bd/feature/mcq/views/exam_view.dart';
 import 'package:ict_job_prep_bd/l10n/app_localizations.dart';
 
 import 'package:ict_job_prep_bd/translation/controller/translation.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Home(),
+      home: ExamView(),
     );
     },);
   }

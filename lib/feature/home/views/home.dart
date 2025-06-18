@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:get/get.dart';
 import 'package:ict_job_prep_bd/core/style/global_text_style.dart';
 import 'package:ict_job_prep_bd/feature/home/controllers/home_controller.dart';
@@ -59,9 +60,10 @@ class Home extends StatelessWidget {
           padding: EdgeInsetsGeometry.all(20),
           child: Column(
             children: [
-               Text("বাংলাদেশ ব্যাংক নিয়োগ", style: banglaTextStyle(
-                fs: 16
-               ),)    
+                   Math.tex(
+          r'nCr = \frac{n!}{r!(n - r)!}',
+          textStyle: TextStyle(fontSize: 24),
+        ),
             ],
           ),
         ),
